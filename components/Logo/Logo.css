@@ -1,0 +1,8 @@
+img{
+    width: 250px;
+    padding-left: 30px;
+    transition: all .5s;
+}
+    .cabecera img:hover{
+        transform: scale(1.3) ;
+    }
