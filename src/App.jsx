@@ -3,11 +3,7 @@
 import { useState } from 'react'
 import NavBar from '../components/NavBar/NavBar'
 import './App.css'
-
-
-
-
-
+import ItemListContainer from '../components/ItemListContainer/ItemListContainer'
 
 
 
@@ -21,6 +17,7 @@ let handleCount = () =>{
   return (
    <div>
     <NavBar/>
+    <ItemListContainer greeting={'Hola cara de paty, aca vas a ver todo lo que nosotros queramos que veas'}/>
     <p>Clicks: {counter}</p>
     <button onClick={handleCount}> + 1 </button>
    </div>

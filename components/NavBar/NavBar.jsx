@@ -1,6 +1,7 @@
 import React from 'react'
 import Logo from '../Logo/Logo'
 import './NavBar.css'
+import CardWidget from '../CardWidget/CardWidget'
 
 const NavBar = () => {
   return (
@@ -11,6 +12,7 @@ const NavBar = () => {
                 <li className="menu__item"><a href="">Servicios</a></li>
                 <li className="menu__item"><a href="">Paquetes</a></li>
                 <li className="menu__item"><a href="./pages/contacto.html">Contacto</a></li>
+                <li className="menu__item"><a href="./pages/login.html"><CardWidget/></a></li>
             </ul>
         </nav>
   )
