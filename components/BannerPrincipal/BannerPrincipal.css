@@ -1,0 +1,28 @@
+.imagen__hero{
+    height: 60vh;
+    background-image: url("./assets/portada.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-inline: 200px;
+    text-align: center;
+    margin-top: 5px;
+
+}
+
+.imagen__hero h2{
+    color: rgb(245, 238, 238);
+    font-family: "Montserrat", sans-serif;
+    font-size: 40px;
+    text-shadow: 4px 4px 2px rgba(0,0,0,0.6);
+}
+.imagen__hero p{
+    margin-top: 2em;
+    color: rgb(245, 238, 238);
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px ;
+}

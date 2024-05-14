@@ -1,0 +1,60 @@
+footer{
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    padding: 2rem 8%;
+    background-color: #def3f7 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer .logo{
+    height: 70px;
+    margin-bottom: 1rem;
+}
+
+.footer__redSocialContainer, .footer__menuContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+.footer__redSocialContainer .redsocial__icono{
+    text-decoration: none;
+    color: black;
+}
+.footer__redSocialContainer .redsocial__icono:hover{
+    color: #17174e;
+}
+.footer__redSocialContainer .redsocial__icono i{
+    font-size: 30px;
+    padding: 1rem;
+}
+
+.footer__menuContainer{
+    list-style-type: none;
+    color: #17174e;
+    font-family: "Roboto";
+    font-size: 18px;
+}
+
+.footer__menuContainer .menu__item{
+    margin: 1rem 1.5rem;
+    cursor: pointer;
+    opacity: 0.6;
+}
+    .footer__menuContainer .menu__item:hover{
+        opacity: 1;
+    }
+
+.copyright{
+    color: #7c7d7e;
+    opacity: 0.5;
+    font-family: "Oswald";
+    font-size: 14px;
+    text-align: center;
+}

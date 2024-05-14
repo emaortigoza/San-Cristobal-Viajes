@@ -2,24 +2,29 @@
 
 import { useState } from 'react'
 import NavBar from '../components/NavBar/NavBar'
-import './App.css'
+import BannerPrincipal from '../components/BannerPrincipal/BannerPrincipal'
 import ItemListContainer from '../components/ItemListContainer/ItemListContainer'
+import './App.css'
+import 'bootstrap/dist/css/bootstrap.min.css'
+import Footer from '../components/Footer/Footer'
 
 
 
 
 function App() {
-const [counter, setCounter] = useState(0)
+/* /* const [counter, setCounter] = useState(0)
 let handleCount = () =>{
   setCounter(counter + 1)
-}
+  <p>Clicks: {counter}</p>
+    <button onClick={handleCount}> + 1 </button> 
+} */
 
   return (
    <div>
     <NavBar/>
-    <ItemListContainer greeting={'Hola cara de paty, aca vas a ver todo lo que nosotros queramos que veas'}/>
-    <p>Clicks: {counter}</p>
-    <button onClick={handleCount}> + 1 </button>
+    <BannerPrincipal/>
+    <ItemListContainer/>
+    <Footer/>
    </div>
   )
 }
