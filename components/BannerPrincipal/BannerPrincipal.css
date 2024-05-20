@@ -1,5 +1,5 @@
 .imagen__hero{
-    height: 60vh;
+    min-height: 60vh;
     background-image: url("./assets/portada.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -19,10 +19,24 @@
     font-family: "Montserrat", sans-serif;
     font-size: 40px;
     text-shadow: 4px 4px 2px rgba(0,0,0,0.6);
+
 }
 .imagen__hero p{
     margin-top: 2em;
     color: rgb(245, 238, 238);
     font-family: "Montserrat", sans-serif;
     font-size: 20px ;
+}
+
+@media screen and (max-width: 768px) {
+    .imagen__hero{
+        padding-inline: 100px;
+    }
+    
+}
+
+@media screen and (max-width: 500px) {
+    .imagen__hero{
+        padding-inline: 80px;
+    }
 }

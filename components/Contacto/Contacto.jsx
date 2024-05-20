@@ -10,14 +10,15 @@ const Contacto = () => {
       <main className="contacto__hero">
         <section className="contacto__box">
             <div className="box__info">
-             <h2>CONTACTATE CON NOSOTROS</h2>
-             <div className="data">
-                   <p><i><FontAwesomeIcon icon={faPhone} /></i>+54 123 456 789</p>
+                <h2>CONTACTATE CON NOSOTROS</h2>
+                <div className="data">
+                    <p><i><FontAwesomeIcon icon={faPhone} /></i>+54 123 456 789</p>
                     <p><i><FontAwesomeIcon icon={faEnvelope} /></i>sancristobalviajes@sancristobal.com</p>
-                <p><i><FontAwesomeIcon icon={faLocationDot} /></i>En algun lugar de CABA</p>
-            </div>
+                    <p><i><FontAwesomeIcon icon={faLocationDot} /></i>En algun lugar de CABA</p>
+                </div>
            
-        </div>
+            </div>
+            
             <form>
                 <div className="input-box">
                     <input type="text" required placeholder="Nombre y Apellido"/>

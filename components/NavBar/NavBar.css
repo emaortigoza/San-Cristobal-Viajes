@@ -36,3 +36,26 @@
 .dropdown{
     background-color: #def3f7;
 }
+
+@media screen and (max-width: 768px) {
+    .cabecera{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+        .cabecera .menu{
+            margin-top: 1rem;
+        }
+}
+
+@media screen and (max-width: 500px) {
+    .cabecera{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+        .cabecera .menu{
+            margin-top: 1rem;
+            flex-direction: column;
+        }
+}

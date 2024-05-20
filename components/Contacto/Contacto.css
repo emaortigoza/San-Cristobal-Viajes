@@ -4,7 +4,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(rgba(0 0 0 / .6), rgba(0 0 0 / .6)), url(../Contacto/assets/formulario2.jpg);
+    background: linear-gradient(rgba(0 0 0 / .6), rgba(0 0 0 / .6)), url(./assets/formulario2.jpg);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -46,24 +46,7 @@
     font-size: 25px;
 }
 
-.links{
-    display: flex;
-    gap:15px ;
-}
-.links > a {
-    text-decoration: none;
-    width: 40px;
-    height: 40px;
-    background: rgb(235, 144, 162);
-    text-align: center;
-    transition: .1s;
-}
 
-.links > a > i{
-    color: #fff;
-    line-height: 40px;
-    font-size: 20px;
-}
 
 form{
     display: flex;
@@ -111,7 +94,14 @@ form{
     outline: none;
 }
 
+.input-box > i{
+    color: rgba(255 255 255 / .3);
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%);
+    right: 15px;
 
+}
 
 form > button {
     background: rgb(235, 144, 162);
@@ -127,4 +117,40 @@ form > button {
 form > button:hover, 
 .links > a:hover {
     background: rgb(173, 13, 45);
+}
+
+
+@media screen and (max-width: 768px) {
+    .contacto__hero{
+        width: auto;
+    }
+
+    /*-----Contacto-----*/
+    .contacto__box{
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .box__info{
+        gap: 15px;
+    }
+    .box__info > h2{
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .contacto__hero{
+        width: auto;
+    }
+    .box__info{
+        gap:12px
+    }
+    .box__info > h2{
+        font-size: 1.2rem;
+    }
+    form > button{
+        margin: 10px;
+    }
 }
