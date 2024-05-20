@@ -7,6 +7,7 @@ import ItemListContainer from '../components/ItemListContainer/ItemListContainer
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Footer from '../components/Footer/Footer'
+import Contacto from '../components/Contacto/Contacto'
 
 
 
@@ -24,6 +25,7 @@ let handleCount = () =>{
     <NavBar/>
     <BannerPrincipal/>
     <ItemListContainer/>
+    <Contacto/>
     <Footer/>
    </div>
   )
