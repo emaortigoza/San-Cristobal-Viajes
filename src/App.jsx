@@ -1,13 +1,13 @@
 
 
 import { useState } from 'react'
-import NavBar from '../components/NavBar/NavBar'
-import BannerPrincipal from '../components/BannerPrincipal/BannerPrincipal'
-import ItemListContainer from '../components/ItemListContainer/ItemListContainer'
+import NavBar from './components/NavBar/NavBar'
+import BannerPrincipal from './components/BannerPrincipal/BannerPrincipal'
+import ItemListContainer from './components/ItemListContainer/ItemListContainer'
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
-import Footer from '../components/Footer/Footer'
-import Contacto from '../components/Contacto/Contacto'
+import Footer from './components/Footer/Footer'
+import Contacto from './components/Contacto/Contacto'
 
 
 
