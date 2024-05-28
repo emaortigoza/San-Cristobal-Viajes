@@ -1,12 +1,16 @@
 import React from 'react'
-import { Row } from 'react-bootstrap'
+import { Container, Row } from 'react-bootstrap'
 import Item from '../Item/Item'
 
 const ItemList = ({destinos}) => {
   return (
-    <Row>
-        {destinos.map(destino => <Item key={destino.id} destino = {destino}/>)}
-    </Row>
+    <Container fluid className='container'>
+      <Row className='mt-5 catalogo'>
+          {destinos.map(destino => <Item key={destino.id} destino = {destino}/>)}
+      </Row>
+    </Container>
+       
+    
   )
 }
 

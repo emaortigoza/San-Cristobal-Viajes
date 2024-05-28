@@ -15,7 +15,6 @@ const NavBar = () => {
                   <NavDropdown.Item href="#action/3.1">Argentina</NavDropdown.Item>
                   <NavDropdown.Item href="#action/3.2">Caribe</NavDropdown.Item>
                   <NavDropdown.Item href="#action/3.3">Europa</NavDropdown.Item>
-                  <NavDropdown.Item href="#action/3.4">Disney</NavDropdown.Item>
                   </NavDropdown></a>
                 </li>
                 <li className="menu__item"><a href="./pages/contacto.html">Contacto</a></li>

@@ -24,15 +24,12 @@ const ItemListContainer = (props) => {
   return (
     
     <>
-      <Container  className='hero'>
-            <h3 className="catalogo__header">Descubrí nuestras ofertas en los mejores destinos.</h3>
+     <h3 className="catalogo__header">Descubrí nuestras ofertas en los mejores destinos.</h3>
+      
+            
+              {loading ? <Loading/>  : <ItemList destinos = {destinos}/>}
+            
            
-              
-                {loading ? <Loading/>  : <ItemList destinos = {destinos}/>}
-              
-              
-
-      </Container>
       <BannerServicios/>
       {props.children}
     </>
