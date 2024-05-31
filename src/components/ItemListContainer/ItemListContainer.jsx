@@ -5,6 +5,7 @@ import './ItemListContainer.css'
 import { mFectch } from '../../utils/mFetch'
 import ItemList from '../ItemList/ItemList'
 import Loading from '../Loading/Loading'
+import Filter from '../Filter/Filter'
 
 
 const ItemListContainer = (props) => {
@@ -20,10 +21,20 @@ const ItemListContainer = (props) => {
     .finally(()=> setLoading(false))
   },[])
   
-  console.log(destinos)
+  const handleProductFiltered = ({filterState, handleFilterChange}) =>{
+    <div>
+      <h2>Buscar Destino</h2>
+      {filterState}
+      <input type='text' value={filterState} onChange={handleFilterChange}/>
+    </div>
+  }
+
   return (
     
     <>
+    <Filter>
+        {handleProductFiltered}
+      </Filter>
      <h3 className="catalogo__header">Descubrí nuestras ofertas en los mejores destinos.</h3>
       
             

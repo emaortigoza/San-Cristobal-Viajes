@@ -20,7 +20,7 @@ const Item = ({destino}) => {
                         </Card.Text>
                         <hr />
                         <Card.Text>
-                           $ {destino.price}
+                           $ {destino.price} por tramo
                         </Card.Text> 
                         <div>
                         <Button className='btn btn-outline-danger center'>Ver mas</Button>

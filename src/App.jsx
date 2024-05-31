@@ -9,6 +9,7 @@ import Contacto from './components/Contacto/Contacto'
 import ItemCount from './components/Itemcount/ItemCount'
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
+import Formulario from './components/Formulario/Formulario'
 
 
 
@@ -22,6 +23,7 @@ function App() {
     <BannerPrincipal/>
     <ItemListContainer>
       <ItemCount/>
+      <Formulario/>
     </ItemListContainer> 
     <Contacto/>
     <Footer/>

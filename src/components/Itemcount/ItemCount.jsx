@@ -1,24 +1,17 @@
-import React, { useRef, useState } from 'react'
+import { useCounter } from '../../hook/useCounter'
+import './ItemCount.css'
 
-const ItemCount = () => {
+const ItemCount = ({initial =1, stock = 5, onAdd}) => {
 
-    const [counter, setCounter] = useState(0)
-    const renderCount =useRef(0)
-   
-  console.log(renderCount)
-    let handleCount = () =>{
-        setCounter(counter + 1)
-    }
-
-    renderCount.current++
+    const {counter, handleSumar, handleRestar} = useCounter(initial, 1 , stock)
 
   return (
-    <div>
-        <p>Clicks: {counter}</p>
-        <button onClick={handleCount}> + 1 </button> 
-        <p>Cantidad de renderizados: {renderCount.current}</p>
-
-    </div>
+    <center>
+      <button className='btn-Count' onClick={handleRestar}> - </button> 
+        <label className='texto-Counter'>{counter}</label>
+      <button className='btn-Count' onClick={handleSumar}> +  </button> 
+      <button className='btn-Count-AgregarCarrito'>Agregar paquete</button>
+    </center>
   )
 }
 

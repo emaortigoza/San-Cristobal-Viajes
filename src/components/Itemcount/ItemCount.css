@@ -1,0 +1,34 @@
+center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-Count{
+    width: 20px;
+    height: 30px;
+    margin: 5px;
+    font-size: bold 18px;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: solid blue 2px;
+}
+
+.btn-Count-AgregarCarrito{
+    width: 150px;
+    height: 30px;
+    padding: auto;
+    margin: 5px;
+    font-size: bold 18px;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: solid blue 2px;
+}
+
+center .btn-Count .texto-Counter{
+    font-size: 18px;
+}
