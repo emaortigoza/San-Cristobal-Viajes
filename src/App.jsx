@@ -1,15 +1,15 @@
 
+import { Navigate, Route, BrowserRouter as Router, Routes} from 'react-router-dom'
 
 import { useState } from 'react'
 import NavBar from './components/NavBar/NavBar'
-import BannerPrincipal from './components/BannerPrincipal/BannerPrincipal'
 import ItemListContainer from './components/ItemListContainer/ItemListContainer'
-import Footer from './components/Footer/Footer'
 import Contacto from './components/Contacto/Contacto'
-import ItemCount from './components/Itemcount/ItemCount'
+import Footer from './components/Footer/Footer'
+import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer'
+import CartContainer from './components/CartContainer/CartContainer'
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
-import Formulario from './components/Formulario/Formulario'
 
 
 
@@ -18,16 +18,19 @@ import Formulario from './components/Formulario/Formulario'
 function App() {
 
   return (
-   <div>
+   <Router>
     <NavBar/>
-    <BannerPrincipal/>
-    <ItemListContainer>
-      <ItemCount/>
-      <Formulario/>
-    </ItemListContainer> 
-    <Contacto/>
+      <Routes>
+        <Route path='/' element={<ItemListContainer/>}/>
+        <Route path='/categoria/:categoria' element={<ItemListContainer/>}/>
+        <Route path='/contacto' element={<Contacto/>}/>
+        <Route path='/detail/:pid' element={<ItemDetailContainer/>}/>
+        <Route path='/cart' element={<CartContainer/>}/>
+       {/*  <Route path='/notfound' element={<NotFound404/>}
+        <Route path = '*' element={<Navigate to='/notfound'/>}/> */}
+      </Routes>
     <Footer/>
-   </div>
+   </Router>
   )
 }
 

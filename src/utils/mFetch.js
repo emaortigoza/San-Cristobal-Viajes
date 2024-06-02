@@ -11,11 +11,11 @@ let destinos = [
     {id: '10', categoria: 'Caribe', name: 'Curacao', stock: 60, price: 1700000, foto: '/public/images/destino-Curacao.jpg'}
   ]
   
-  export const mFectch = () =>{
+  export const mFectch = (name) =>{
     return new Promise((res, rej) =>{
   
       setTimeout(() =>{
-        res(destinos)
-      },5000)
+        res(!name ? destinos : destinos.find(destino => destino.name === name))
+      },2000)
   })
   }

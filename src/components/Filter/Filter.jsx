@@ -6,7 +6,6 @@ const Filter = ({children}) => {
     const handleFilterChange = (evt) => {
         setFilterState(evt.target.value)
     }
-
   return children({filterState, handleFilterChange})
 }
 
