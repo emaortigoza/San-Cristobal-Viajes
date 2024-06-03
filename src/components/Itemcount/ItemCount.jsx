@@ -10,7 +10,7 @@ const ItemCount = ({initial =1, stock = 5, onAdd}) => {
       <button className='btn-Count' onClick={handleRestar}> - </button> 
         <label className='texto-Counter'>{counter}</label>
       <button className='btn-Count' onClick={handleSumar}> +  </button> 
-      <button className='btn-Count-AgregarCarrito'>Agregar paquete</button>
+      <button className='btn-Count-AgregarCarrito' onClick={()=>{onAdd(counter)}}>Agregar paquete</button>
     </center>
   )
 }

@@ -7,6 +7,7 @@ import BannerPrincipal from '../BannerPrincipal/BannerPrincipal'
 import Contacto from '../Contacto/Contacto'
 import './ItemListContainer.css'
 import { useParams } from 'react-router-dom'
+import Filter from '../Filter/Filter'
 
 
 
@@ -40,23 +41,25 @@ const ItemListContainer = (props) => {
 
   
   console.log(categoria)
-  
+
+ 
   return (
     
     <>
     
      <BannerPrincipal/>
-   
+      
     
      <h3 className="catalogo__header">Descubrí nuestras ofertas en los mejores destinos.</h3>
-      
+     
             
               {loading ? <Loading/>  : <ItemList destinos = {destinos}/>}
             
            
       <BannerServicios/>
+       
       <Contacto/>
-      
+     
     </>
     
   
