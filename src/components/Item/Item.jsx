@@ -25,8 +25,8 @@ const Item = ({destino}) => {
                            $ {destino.price} por tramo
                         </Card.Text> 
                         <div>
-                            <Link to='/detail'>
-                                <Button className='btn btn-outline-danger center'>Ver mas</Button>
+                            <Link to={`/detail/${destino.name}`}>
+                                <Button className='btn btn-outline-primary center'>Ver mas</Button>
                             </Link>
                         
                         </div>

@@ -11,7 +11,7 @@ const NavBar = () => {
         <Navbar className="cabecera" sticky="top">
             <Link to='/'><Logo /></Link>
             
-            <ul className="menu">
+            <ul className="menu justify-content-end">
                 <li className="menu__item "><NavLink to='/' className={({isActive})=> isActive ? 'active' : ''}>Home</NavLink></li>
 
                 <li className="menu__item"><NavLink to='/servicios' className={({isActive})=> isActive ? 'active' : ''}>Servicios</NavLink></li>

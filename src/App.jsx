@@ -10,6 +10,8 @@ import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailCont
 import CartContainer from './components/CartContainer/CartContainer'
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
+import { CartContextProvider } from './context/CartContext'
+
 
 
 
@@ -18,19 +20,26 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 function App() {
 
   return (
-   <Router>
-    <NavBar/>
-      <Routes>
-        <Route path='/' element={<ItemListContainer/>}/>
-        <Route path='/categoria/:categoria' element={<ItemListContainer/>}/>
-        <Route path='/contacto' element={<Contacto/>}/>
-        <Route path='/detail/:pid' element={<ItemDetailContainer/>}/>
-        <Route path='/cart' element={<CartContainer/>}/>
-       {/*  <Route path='/notfound' element={<NotFound404/>}
-        <Route path = '*' element={<Navigate to='/notfound'/>}/> */}
-      </Routes>
-    <Footer/>
-   </Router>
+      <CartContextProvider>
+
+      <Router>
+          <NavBar/>
+            <Routes>
+              <Route path='/' element={<ItemListContainer/>}/>
+              <Route path='/categoria/:categoria' element={<ItemListContainer/>}/>
+              <Route path='/contacto' element={<Contacto/>}/>
+              <Route path='/detail/:pid' element={<ItemDetailContainer/>}/>
+              <Route path='/cart' element={<CartContainer/>}/>
+            {/*  <Route path='/notfound' element={<NotFound404/>}
+              <Route path = '*' element={<Navigate to='/notfound'/>}/> */}
+            </Routes>
+          <Footer/>
+        </Router>
+
+      </CartContextProvider>
+      
+    
+   
   )
 }
 
