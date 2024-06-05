@@ -7,6 +7,7 @@ import './ItemDetail.css'
 
 
 const ItemDetail = ({destino}) => {
+
   const [isCant, setIsCant] = useState(false)
 
   const {addToCart, cartList} = useCartContext()
@@ -43,6 +44,7 @@ const ItemDetail = ({destino}) => {
             !isCant ? <ItemCount onAdd={onAdd}/> : 
             <>
               <Link to= {'/cart'} className='btn btn-outline-danger'>Terminar compra</Link>
+              <Link to={'/'} className='btn btn-outline-danger'>Seguir comprando</Link>
             </>
           }
           </div>

@@ -1,9 +1,11 @@
 import React from 'react'
+import { useCartContext } from '../../context/CartContext'
 
 const CardWidget = () => {
+  const {cantidadTotal} = useCartContext()
   return (
     <>
-        3✈
+        {cantidadTotal() !== 0 && cantidadTotal()}✈
     </>
   )
 }

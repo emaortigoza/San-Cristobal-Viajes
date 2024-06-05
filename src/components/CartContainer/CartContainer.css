@@ -1,0 +1,35 @@
+.contenedorCart{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.contenedorCart .contenedorDestinos{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-top: 20px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.contenedorCart h3{
+    text-align: center;
+}
+.botonera{
+    display: flex;
+    justify-content: space-between;
+}
+.contenedorCart .btn{
+    align-items: center;
+    margin: 10px;
+}
+
+.cartVacio{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}

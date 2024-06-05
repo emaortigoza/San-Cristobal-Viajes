@@ -13,8 +13,6 @@ const NavBar = () => {
             
             <ul className="menu justify-content-end">
                 <li className="menu__item "><NavLink to='/' className={({isActive})=> isActive ? 'active' : ''}>Home</NavLink></li>
-
-                <li className="menu__item"><NavLink to='/servicios' className={({isActive})=> isActive ? 'active' : ''}>Servicios</NavLink></li>
                 <li className="menu__item"><Link><NavDropdown  title="Destinos" id="basic-nav-dropdown">
                   <NavDropdown.Item href="#action/3.1"><NavLink to='/categoria/Argentina' className={({isActive})=> isActive ? 'active' : ''}>Argentina</NavLink></NavDropdown.Item>
                   <NavDropdown.Item href="#action/3.2"><NavLink to='/categoria/Caribe' className={({isActive})=> isActive ? 'active' : ''}>Caribe</NavLink></NavDropdown.Item>
