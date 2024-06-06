@@ -1,0 +1,15 @@
+.contacto__pagos{
+    margin-top: 0.5rem;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(0 0 0 / .6), rgba(0 0 0 / .6)), url(./assets/portada2.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.contacto__pagos form h2{
+    color: aliceblue;
+}

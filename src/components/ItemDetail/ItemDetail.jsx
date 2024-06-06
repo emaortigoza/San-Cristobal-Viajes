@@ -19,7 +19,7 @@ const ItemDetail = ({destino}) => {
     setIsCant(true)
 
   }
- console.log(cartList)
+ console.log(destino)
   return (
     <div className="contenedorDetail">
       <div className="row">

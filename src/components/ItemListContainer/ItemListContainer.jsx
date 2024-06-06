@@ -7,6 +7,7 @@ import BannerPrincipal from '../BannerPrincipal/BannerPrincipal'
 import Contacto from '../Contacto/Contacto'
 import './ItemListContainer.css'
 import { useParams } from 'react-router-dom'
+import {collection, getDocs, getFirestore, query, where} from 'firebase/firestore'
 import Filter from '../Filter/Filter'
 
 
@@ -20,24 +21,28 @@ const ItemListContainer = (props) => {
 
   const {categoria} = useParams()
 
-  useEffect(()=>{
-      if (!categoria) {
-        mFectch()
-      .then(resultado =>{
-        setDestinos(resultado)
-      })
+  
+
+  useEffect(() =>{
+    const dbFirestore = getFirestore()
+    const queryCollection = collection(dbFirestore, 'destinos')
+  if (!categoria) {
+    getDocs(queryCollection)
+      .then(res =>setDestinos(res.docs.map(destinos => ({id: destinos.id, ...destinos.data()}))))
       .catch(error => console.log(error))
-      .finally(()=> setLoading(false))
-    }else{
-      mFectch()
-      .then(resultado =>{
-        setDestinos(resultado.filter(destino => destino.categoria === categoria ))
-      })
-      .catch(error => console.log(error))
-      .finally(()=> setLoading(false))
-    }
+      .finally(()=>setLoading(false))
     
-  },[categoria])
+  }else{
+    const queryCollectionFiltered =query(
+      queryCollection,
+      where('categoria','==', categoria)
+    )
+      getDocs(queryCollectionFiltered)
+        .then(res => setDestinos(res.docs.map(destinos =>({id: destinos.id, ...destinos.data()}))))
+        .catch(error => console.log(error))
+        .finally(()=>setLoading(false))
+  }
+ },[categoria]) 
 
   
   console.log(categoria)

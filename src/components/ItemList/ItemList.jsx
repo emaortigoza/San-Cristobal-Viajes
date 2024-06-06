@@ -1,10 +1,10 @@
-import React from 'react'
+import React, { memo } from 'react'
 import { Container, Row } from 'react-bootstrap'
 import Item from '../Item/Item'
 import Filter from '../Filter/Filter'
 
 
-const ItemList = ({destinos}) => {
+const ItemList = memo(({destinos}) => {
   
   return (
     <Container fluid className='container'>
@@ -16,7 +16,7 @@ const ItemList = ({destinos}) => {
        
     
   )
-}
+})
 
 export default ItemList
  

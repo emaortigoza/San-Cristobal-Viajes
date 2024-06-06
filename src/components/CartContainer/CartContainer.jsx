@@ -27,7 +27,7 @@ const CartContainer = () => {
              <div>
                 <div className="botonera">
                   <button onClick={vaciarCarrito} className="btn btn-danger">Vaciar Carrito</button>
-                <button className="btn btn-danger">Ir a pagos</button>
+                  <Link to= {'/pagos'} className='btn btn-outline-danger'>Pagar</Link>
                 </div>
               </div>
           </>

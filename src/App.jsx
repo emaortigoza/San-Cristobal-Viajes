@@ -11,6 +11,7 @@ import CartContainer from './components/CartContainer/CartContainer'
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import { CartContextProvider } from './context/CartContext'
+import CardPagos from './components/CardPagos/CardPagos'
 
 
 
@@ -30,6 +31,7 @@ function App() {
               <Route path='/contacto' element={<Contacto/>}/>
               <Route path='/detail/:pid' element={<ItemDetailContainer/>}/>
               <Route path='/cart' element={<CartContainer/>}/>
+              <Route path='/pagos' element={<CardPagos/>} />
             {/*  <Route path='/notfound' element={<NotFound404/>}
               <Route path = '*' element={<Navigate to='/notfound'/>}/> */}
             </Routes>
